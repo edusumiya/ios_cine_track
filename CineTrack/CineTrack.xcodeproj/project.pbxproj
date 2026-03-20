@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89ACD1452F6D82AD00E4349C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89ACD1412F6D82AD00E4349C /* Assets.xcassets */; };
+		89ACD1462F6D82AD00E4349C /* CineTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ACD1422F6D82AD00E4349C /* CineTrackApp.swift */; };
+		89ACD1472F6D82AD00E4349C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ACD1432F6D82AD00E4349C /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89ACD1252F6D7FD900E4349C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89ACD10F2F6D7FD800E4349C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89ACD1162F6D7FD800E4349C;
+			remoteInfo = CineTrack;
+		};
+		89ACD12F2F6D7FD900E4349C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89ACD10F2F6D7FD800E4349C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89ACD1162F6D7FD800E4349C;
+			remoteInfo = CineTrack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89ACD1172F6D7FD800E4349C /* CineTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89ACD1242F6D7FD900E4349C /* CineTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89ACD12E2F6D7FD900E4349C /* CineTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89ACD1412F6D82AD00E4349C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89ACD1422F6D82AD00E4349C /* CineTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineTrackApp.swift; sourceTree = "<group>"; };
+		89ACD1432F6D82AD00E4349C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		89ACD1272F6D7FD900E4349C /* CineTrackTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CineTrackTests;
+			sourceTree = "<group>";
+		};
+		89ACD1312F6D7FD900E4349C /* CineTrackUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CineTrackUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89ACD1142F6D7FD800E4349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89ACD1212F6D7FD900E4349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89ACD12B2F6D7FD900E4349C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89ACD10E2F6D7FD800E4349C = {
+			isa = PBXGroup;
+			children = (
+				89ACD1442F6D82AD00E4349C /* CineTrack */,
+				89ACD1272F6D7FD900E4349C /* CineTrackTests */,
+				89ACD1312F6D7FD900E4349C /* CineTrackUITests */,
+				89ACD1182F6D7FD800E4349C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89ACD1182F6D7FD800E4349C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89ACD1172F6D7FD800E4349C /* CineTrack.app */,
+				89ACD1242F6D7FD900E4349C /* CineTrackTests.xctest */,
+				89ACD12E2F6D7FD900E4349C /* CineTrackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89ACD1442F6D82AD00E4349C /* CineTrack */ = {
+			isa = PBXGroup;
+			children = (
+				89ACD1492F6D82BE00E4349C /* Core */,
+				89ACD1482F6D82B800E4349C /* App */,
+				89ACD1412F6D82AD00E4349C /* Assets.xcassets */,
+				89ACD1422F6D82AD00E4349C /* CineTrackApp.swift */,
+				89ACD1432F6D82AD00E4349C /* ContentView.swift */,
+			);
+			path = CineTrack;
+			sourceTree = "<group>";
+		};
+		89ACD1482F6D82B800E4349C /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		89ACD1492F6D82BE00E4349C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89ACD1162F6D7FD800E4349C /* CineTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89ACD1382F6D7FD900E4349C /* Build configuration list for PBXNativeTarget "CineTrack" */;
+			buildPhases = (
+				89ACD1132F6D7FD800E4349C /* Sources */,
+				89ACD1142F6D7FD800E4349C /* Frameworks */,
+				89ACD1152F6D7FD800E4349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CineTrack;
+			packageProductDependencies = (
+			);
+			productName = CineTrack;
+			productReference = 89ACD1172F6D7FD800E4349C /* CineTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89ACD1232F6D7FD900E4349C /* CineTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89ACD13B2F6D7FD900E4349C /* Build configuration list for PBXNativeTarget "CineTrackTests" */;
+			buildPhases = (
+				89ACD1202F6D7FD900E4349C /* Sources */,
+				89ACD1212F6D7FD900E4349C /* Frameworks */,
+				89ACD1222F6D7FD900E4349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89ACD1262F6D7FD900E4349C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				89ACD1272F6D7FD900E4349C /* CineTrackTests */,
+			);
+			name = CineTrackTests;
+			packageProductDependencies = (
+			);
+			productName = CineTrackTests;
+			productReference = 89ACD1242F6D7FD900E4349C /* CineTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89ACD12D2F6D7FD900E4349C /* CineTrackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89ACD13E2F6D7FD900E4349C /* Build configuration list for PBXNativeTarget "CineTrackUITests" */;
+			buildPhases = (
+				89ACD12A2F6D7FD900E4349C /* Sources */,
+				89ACD12B2F6D7FD900E4349C /* Frameworks */,
+				89ACD12C2F6D7FD900E4349C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89ACD1302F6D7FD900E4349C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				89ACD1312F6D7FD900E4349C /* CineTrackUITests */,
+			);
+			name = CineTrackUITests;
+			packageProductDependencies = (
+			);
+			productName = CineTrackUITests;
+			productReference = 89ACD12E2F6D7FD900E4349C /* CineTrackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89ACD10F2F6D7FD800E4349C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					89ACD1162F6D7FD800E4349C = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					89ACD1232F6D7FD900E4349C = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 89ACD1162F6D7FD800E4349C;
+					};
+					89ACD12D2F6D7FD900E4349C = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 89ACD1162F6D7FD800E4349C;
+					};
+				};
+			};
+			buildConfigurationList = 89ACD1122F6D7FD800E4349C /* Build configuration list for PBXProject "CineTrack" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89ACD10E2F6D7FD800E4349C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 89ACD1182F6D7FD800E4349C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89ACD1162F6D7FD800E4349C /* CineTrack */,
+				89ACD1232F6D7FD900E4349C /* CineTrackTests */,
+				89ACD12D2F6D7FD900E4349C /* CineTrackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89ACD1152F6D7FD800E4349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89ACD1452F6D82AD00E4349C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89ACD1222F6D7FD900E4349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89ACD12C2F6D7FD900E4349C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89ACD1132F6D7FD800E4349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89ACD1462F6D82AD00E4349C /* CineTrackApp.swift in Sources */,
+				89ACD1472F6D82AD00E4349C /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89ACD1202F6D7FD900E4349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89ACD12A2F6D7FD900E4349C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89ACD1262F6D7FD900E4349C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89ACD1162F6D7FD800E4349C /* CineTrack */;
+			targetProxy = 89ACD1252F6D7FD900E4349C /* PBXContainerItemProxy */;
+		};
+		89ACD1302F6D7FD900E4349C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89ACD1162F6D7FD800E4349C /* CineTrack */;
+			targetProxy = 89ACD12F2F6D7FD900E4349C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		89ACD1362F6D7FD900E4349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89ACD1372F6D7FD900E4349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89ACD1392F6D7FD900E4349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.sumiya.CineTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89ACD13A2F6D7FD900E4349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.sumiya.CineTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89ACD13C2F6D7FD900E4349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.sumiya.CineTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CineTrack";
+			};
+			name = Debug;
+		};
+		89ACD13D2F6D7FD900E4349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.sumiya.CineTrackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CineTrack";
+			};
+			name = Release;
+		};
+		89ACD13F2F6D7FD900E4349C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.sumiya.CineTrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CineTrack;
+			};
+			name = Debug;
+		};
+		89ACD1402F6D7FD900E4349C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.sumiya.CineTrackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CineTrack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89ACD1122F6D7FD800E4349C /* Build configuration list for PBXProject "CineTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89ACD1362F6D7FD900E4349C /* Debug */,
+				89ACD1372F6D7FD900E4349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89ACD1382F6D7FD900E4349C /* Build configuration list for PBXNativeTarget "CineTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89ACD1392F6D7FD900E4349C /* Debug */,
+				89ACD13A2F6D7FD900E4349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89ACD13B2F6D7FD900E4349C /* Build configuration list for PBXNativeTarget "CineTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89ACD13C2F6D7FD900E4349C /* Debug */,
+				89ACD13D2F6D7FD900E4349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89ACD13E2F6D7FD900E4349C /* Build configuration list for PBXNativeTarget "CineTrackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89ACD13F2F6D7FD900E4349C /* Debug */,
+				89ACD1402F6D7FD900E4349C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89ACD10F2F6D7FD800E4349C /* Project object */;
+}
