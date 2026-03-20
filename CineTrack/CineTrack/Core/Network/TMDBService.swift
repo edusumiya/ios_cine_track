@@ -14,7 +14,7 @@ final class TMBService {
     // In a larger app, we'd inject this via initializer (dependency injection).
     static let shared = TMBService()
     
-    private let apiKey = "API_KEY"
+    private let apiKey = "7137bc4ac21ea37a37259343a01f97ec"
     
     private let session: URLSession
     private let decoder: JSONDecoder
