@@ -60,7 +60,7 @@ struct DetailView: View {
                         castSection(credits.topCast)
                     }
                 }
-                .padding()
+                .padding(.horizontal)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -77,7 +77,7 @@ struct DetailView: View {
             Rectangle()
                 .fill(Color.secondary.opacity(0.2))
         }
-        .frame(height: 280)
+        .frame(maxHeight: 280)
         .clipped()
         .overlay(
             LinearGradient(
@@ -118,7 +118,6 @@ struct DetailView: View {
             }
             .font(.subheadline)
         }
-        .padding(60)
     }
     
     private func genresSection(_ genres: [Genre]) -> some View {
@@ -136,7 +135,7 @@ struct DetailView: View {
                 }
             }
         }
-        .padding(60)
+        .padding(.leading)
     }
     
     private func overviewSection(_ detail: MovieDetail) -> some View {
@@ -148,7 +147,6 @@ struct DetailView: View {
                 .foregroundStyle(.secondary)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .padding(60)
     }
     
     private func castSection(_ cast: [CastMember]) -> some View {

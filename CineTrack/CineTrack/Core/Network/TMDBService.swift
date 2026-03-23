@@ -7,14 +7,14 @@
 
 import Foundation
 
-final class TMBService {
+final class TMDBService {
     
     // MARK: - Singleton
     // Using a shared instance keeps things simple for Phase 1.
     // In a larger app, we'd inject this via initializer (dependency injection).
-    static let shared = TMBService()
+    static let shared = TMDBService()
     
-    private let apiKey = "7137bc4ac21ea37a37259343a01f97ec"
+    private let apiKey = Secrets.tmdbAPIKey
     
     private let session: URLSession
     private let decoder: JSONDecoder
@@ -51,7 +51,7 @@ final class TMBService {
 }
 
 // MARK: - Fetch Methods
-extension TMBService {
+extension TMDBService {
     // MARK: - Movie
     func fetchNowPlaying() async throws -> MediaResponse<Movie> {
         try await request(.nowPlaying)

@@ -22,9 +22,9 @@ final class SearchViewModel {
     var hasResults: Bool { !results.isEmpty }
     var showEmptyState: Bool { !query.isEmpty && !isLoading && results.isEmpty }
     
-    private let service: TMBService
+    private let service: TMDBService
     
-    init(service: TMBService = .shared) {
+    init(service: TMDBService = .shared) {
         self.service = service
     }
     

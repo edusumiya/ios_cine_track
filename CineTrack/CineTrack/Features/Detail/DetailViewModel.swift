@@ -20,9 +20,9 @@ final class DetailViewModel {
     
     // MARK: - Dependencies
     private var movieId: Int
-    private let service: TMBService
+    private let service: TMDBService
     
-    init(movieId: Int, service: TMBService = .shared) {
+    init(movieId: Int, service: TMDBService = .shared) {
         self.movieId = movieId
         self.service = service
     }
