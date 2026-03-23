@@ -69,7 +69,7 @@ extension TMDBService {
             try await request(.searchMovies(query: query))
         }
     
-    // MARK: - MovieDetail
+    // MARK: - Movie Detail
     func fetchMovieDetail(id: Int) async throws -> MovieDetail {
         try await request(.movieDetail(id: id))
     }
@@ -82,5 +82,14 @@ extension TMDBService {
     // MARK: - TV Shows
     func fetchPopularTVShows() async throws -> MediaResponse<TVShow> {
         try await request(.popularTVShows)
+    }
+    
+    // MARK: - TVShow Detail
+    func fetchTVShowDetail(id: Int) async throws -> TVShowDetail {
+        try await request(.tvShowDetail(id: id))
+    }
+    
+    func fetchTVShowCredits(id: Int) async throws -> Credits {
+        try await request(.tvShowCredits(id: id))
     }
 }

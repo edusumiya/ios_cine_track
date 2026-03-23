@@ -36,7 +36,7 @@ final class HomeViewModel {
             group.addTask { await self.fetchNowPlaying() }
             group.addTask { await self.fetchPopular() }
             group.addTask { await self.fetchTopRated() }
-            group.addTask { await self.fetchPopulatTVShows() }
+            group.addTask { await self.fetchPopularTVShows() }
         }
         
         isLoading = false
@@ -71,7 +71,7 @@ final class HomeViewModel {
         }
     }
     
-    private func fetchPopulatTVShows() async {
+    private func fetchPopularTVShows() async {
         do {
             let response = try await service.fetchPopularTVShows()
             await MainActor.run { popularTVShows = response.results }

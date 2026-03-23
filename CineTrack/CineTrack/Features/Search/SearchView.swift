@@ -73,7 +73,7 @@ struct SearchView: View {
         }
         .listStyle(.plain)
         .navigationDestination(for: Movie.self) { movie in
-            DetailView(movieId: movie.id)
+            DetailView(mediaType: .movie(id: movie.id))
         }
     }
 }

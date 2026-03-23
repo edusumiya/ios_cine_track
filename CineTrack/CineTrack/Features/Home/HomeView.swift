@@ -57,10 +57,10 @@ struct HomeView: View {
             .padding(.vertical)
         }
         .navigationDestination(for: Movie.self) { movie in
-            DetailView(movieId: movie.id)
+            DetailView(mediaType: .movie(id: movie.id))
         }
         .navigationDestination(for: TVShow.self) { show in
-            DetailView(movieId: show.id)
+            DetailView(mediaType: .tvShow(id: show.id))
         }
     }
 }

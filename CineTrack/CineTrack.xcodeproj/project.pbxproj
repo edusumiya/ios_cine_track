@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8920B7052F71662600C7EBF5 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8920B7042F71662200C7EBF5 /* SearchViewModel.swift */; };
 		8920B7072F716FAF00C7EBF5 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8920B7062F716FA600C7EBF5 /* Secrets.swift */; };
+		8920B7092F717E2400C7EBF5 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8920B7082F717E1F00C7EBF5 /* MediaType.swift */; };
 		89ACD1452F6D82AD00E4349C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89ACD1412F6D82AD00E4349C /* Assets.xcassets */; };
 		89ACD1462F6D82AD00E4349C /* CineTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ACD1422F6D82AD00E4349C /* CineTrackApp.swift */; };
 		89ACD1542F6D844200E4349C /* TMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ACD1532F6D843E00E4349C /* TMDBService.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		8920B7042F71662200C7EBF5 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		8920B7062F716FA600C7EBF5 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		8920B7082F717E1F00C7EBF5 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		89ACD1172F6D7FD800E4349C /* CineTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ACD1242F6D7FD900E4349C /* CineTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ACD12E2F6D7FD900E4349C /* CineTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,6 +224,7 @@
 		89ACD1522F6D840800E4349C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8920B7082F717E1F00C7EBF5 /* MediaType.swift */,
 				89ACD15D2F6D8E4700E4349C /* MediaResponse.swift */,
 				89ACD1592F6D8E3800E4349C /* Movie.swift */,
 				89ACD15B2F6D8E4200E4349C /* TVShow.swift */,
@@ -381,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8920B7092F717E2400C7EBF5 /* MediaType.swift in Sources */,
 				89ACD1602F6D927600E4349C /* HomeView.swift in Sources */,
 				89ACD1542F6D844200E4349C /* TMDBService.swift in Sources */,
 				8920B7052F71662600C7EBF5 /* SearchViewModel.swift in Sources */,

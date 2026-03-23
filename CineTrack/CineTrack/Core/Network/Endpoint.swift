@@ -16,6 +16,7 @@ enum Endpoint {
     case searchMovies(query: String)
     case popularTVShows
     case tvShowDetail(id: Int)
+    case tvShowCredits(id: Int)
     
     // MARK: - Variables
     private var baseURL: String {
@@ -32,6 +33,7 @@ enum Endpoint {
         case .searchMovies:             return "/search/movie"
         case .popularTVShows:           return "/tv/popular"
         case .tvShowDetail(let id):     return "/tv/\(id)"
+        case .tvShowCredits(let id):    return "/tv/\(id)/credits"
         }
     }
     
