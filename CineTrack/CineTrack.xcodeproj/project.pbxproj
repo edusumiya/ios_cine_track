@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8920B7052F71662600C7EBF5 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8920B7042F71662200C7EBF5 /* SearchViewModel.swift */; };
 		89ACD1452F6D82AD00E4349C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89ACD1412F6D82AD00E4349C /* Assets.xcassets */; };
 		89ACD1462F6D82AD00E4349C /* CineTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ACD1422F6D82AD00E4349C /* CineTrackApp.swift */; };
 		89ACD1542F6D844200E4349C /* TMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ACD1532F6D843E00E4349C /* TMDBService.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8920B7042F71662200C7EBF5 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		89ACD1172F6D7FD800E4349C /* CineTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ACD1242F6D7FD900E4349C /* CineTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ACD12E2F6D7FD900E4349C /* CineTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,8 +182,8 @@
 		89ACD14E2F6D83E900E4349C /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				89ACD1612F6D927F00E4349C /* HomeViewModel.swift */,
 				89ACD15F2F6D927600E4349C /* HomeView.swift */,
+				89ACD1612F6D927F00E4349C /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -189,8 +191,8 @@
 		89ACD14F2F6D83EE00E4349C /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				89ACD16C2F6DCB5200E4349C /* DetailViewModel.swift */,
 				89ACD1682F6DC85000E4349C /* DetailView.swift */,
+				89ACD16C2F6DCB5200E4349C /* DetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				89ACD16A2F6DC96E00E4349C /* SearchView.swift */,
+				8920B7042F71662200C7EBF5 /* SearchViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			files = (
 				89ACD1602F6D927600E4349C /* HomeView.swift in Sources */,
 				89ACD1542F6D844200E4349C /* TMDBService.swift in Sources */,
+				8920B7052F71662600C7EBF5 /* SearchViewModel.swift in Sources */,
 				89ACD1462F6D82AD00E4349C /* CineTrackApp.swift in Sources */,
 				89ACD1672F6DC24900E4349C /* MediaCardView.swift in Sources */,
 				89ACD1652F6D95C300E4349C /* LoadingView.swift in Sources */,
