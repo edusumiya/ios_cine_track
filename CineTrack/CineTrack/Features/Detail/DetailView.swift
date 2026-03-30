@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct DetailView: View {
+    @Environment(\.modelContext) private var context
+    @Query private var savedItems: [SavedMedia]
+    
     let mediaType: MediaType
     
     @State private var viewModel: DetailViewModel
@@ -34,6 +38,39 @@ struct DetailView: View {
             Button("Retry") { Task { await viewModel.loadDetail() } }
         } message: {
             Text(viewModel.errorMessage ?? "")
+        }
+    }
+    
+    private func isSaved(as listType: SavedListType) -> Bool {
+        let id = viewModel.movieDetail?.id ?? viewModel.tvShowDetail?.id ?? 0
+        return savedItems.contains {
+            $0.mediaId == id && $0.listTypeRaw == listType.rawValue
+        }
+    }
+    
+    private func toggle(listType: SavedListType) {
+        let id = viewModel.movieDetail?.id ?? viewModel.tvShowDetail?.id ?? 0
+        let title = viewModel.movieDetail?.title ?? viewModel.tvShowDetail?.name ?? ""
+        let posterPath = viewModel.movieDetail?.posterPath ?? viewModel.tvShowDetail?.posterPath
+        let year = viewModel.movieDetail?.releaseYear ?? viewModel.tvShowDetail?.firstAirYear ?? "N/A"
+        let rating = viewModel.movieDetail?.voteAverage ?? viewModel.tvShowDetail?.voteAverage ?? 0
+        let type: SavedMediaType = viewModel.movieDetail != nil ? .movie : .tvShow
+
+        if let existing = savedItems.first(where: {
+            $0.mediaId == id && $0.listTypeRaw == listType.rawValue
+        }) {
+            context.delete(existing)
+        } else {
+            let item = SavedMedia(
+                mediaId: id,
+                title: title,
+                posterPath: posterPath,
+                releaseYear: year,
+                rating: rating,
+                mediaType: type,
+                listType: listType
+            )
+            context.insert(item)
         }
     }
     
@@ -71,6 +108,24 @@ struct DetailView: View {
         }
         .ignoresSafeArea(edges: .top)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                HStack(spacing: 16) {
+                    Button { toggle(listType: .favorite) } label: {
+                        Image(systemName: isSaved(as: .favorite) ? "heart.fill" : "heart")
+                            .foregroundStyle(isSaved(as: .favorite) ? .red : .primary)
+                    }
+                    Button { toggle(listType: .watchlist) } label: {
+                        Image(systemName: isSaved(as: .watchlist) ? "bookmark.fill" : "bookmark")
+                            .foregroundStyle(isSaved(as: .watchlist) ? .blue : .primary)
+                    }
+                    Button { toggle(listType: .watched) } label: {
+                        Image(systemName: isSaved(as: .watched) ? "checkmark.circle.fill" : "checkmark.circle")
+                            .foregroundStyle(isSaved(as: .watched) ? .green : .primary)
+                    }
+                }
+            }
+        }
     }
     
     // MARK: - TVShow Content
@@ -105,6 +160,24 @@ struct DetailView: View {
         }
         .ignoresSafeArea(edges: .top)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                HStack(spacing: 16) {
+                    Button { toggle(listType: .favorite) } label: {
+                        Image(systemName: isSaved(as: .favorite) ? "heart.fill" : "heart")
+                            .foregroundStyle(isSaved(as: .favorite) ? .red : .primary)
+                    }
+                    Button { toggle(listType: .watchlist) } label: {
+                        Image(systemName: isSaved(as: .watchlist) ? "bookmark.fill" : "bookmark")
+                            .foregroundStyle(isSaved(as: .watchlist) ? .blue : .primary)
+                    }
+                    Button { toggle(listType: .watched) } label: {
+                        Image(systemName: isSaved(as: .watched) ? "checkmark.circle.fill" : "checkmark.circle")
+                            .foregroundStyle(isSaved(as: .watched) ? .green : .primary)
+                    }
+                }
+            }
+        }
     }
     
     
