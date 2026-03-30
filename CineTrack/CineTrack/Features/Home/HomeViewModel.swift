@@ -20,9 +20,9 @@ final class HomeViewModel {
     var errorMessage: String?
     
     // MARK: - Dependencies
-    private let service: TMDBService
+    private let service: any TMDBServiceProtocol
     
-    init(service: TMDBService = .shared) {
+    init(service: any TMDBServiceProtocol = TMDBService.shared) {
         self.service = service
     }
     

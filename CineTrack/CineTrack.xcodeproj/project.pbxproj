@@ -12,6 +12,15 @@
 		8920B7092F717E2400C7EBF5 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8920B7082F717E1F00C7EBF5 /* MediaType.swift */; };
 		8920B70C2F71863800C7EBF5 /* SavedMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8920B70B2F71863500C7EBF5 /* SavedMedia.swift */; };
 		8920B70F2F7186CE00C7EBF5 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8920B70E2F7186CE00C7EBF5 /* LibraryView.swift */; };
+		895A24C12F7AC30200CE7661 /* MockTMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24BA2F7AC30200CE7661 /* MockTMDBService.swift */; };
+		895A24C22F7AC30200CE7661 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24BD2F7AC30200CE7661 /* MockData.swift */; };
+		895A24C32F7AC30200CE7661 /* CineTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24BF2F7AC30200CE7661 /* CineTrackTests.swift */; };
+		895A24C72F7AC30500CE7661 /* CineTrackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24C42F7AC30500CE7661 /* CineTrackUITests.swift */; };
+		895A24C82F7AC30500CE7661 /* CineTrackUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24C52F7AC30500CE7661 /* CineTrackUITestsLaunchTests.swift */; };
+		895A24CC2F7AC32B00CE7661 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24CB2F7AC32800CE7661 /* HomeViewModelTests.swift */; };
+		895A24D02F7AEA4200CE7661 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24CF2F7AEA3B00CE7661 /* DetailViewModelTests.swift */; };
+		895A24D42F7AF3D800CE7661 /* SearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24D32F7AF3D300CE7661 /* SearchViewModelTests.swift */; };
+		895A24D62F7AF41E00CE7661 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895A24D52F7AF41A00CE7661 /* EndpointTests.swift */; };
 		89ACD1452F6D82AD00E4349C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89ACD1412F6D82AD00E4349C /* Assets.xcassets */; };
 		89ACD1462F6D82AD00E4349C /* CineTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ACD1422F6D82AD00E4349C /* CineTrackApp.swift */; };
 		89ACD1542F6D844200E4349C /* TMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ACD1532F6D843E00E4349C /* TMDBService.swift */; };
@@ -53,6 +62,15 @@
 		8920B7082F717E1F00C7EBF5 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		8920B70B2F71863500C7EBF5 /* SavedMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedMedia.swift; sourceTree = "<group>"; };
 		8920B70E2F7186CE00C7EBF5 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		895A24BA2F7AC30200CE7661 /* MockTMDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTMDBService.swift; sourceTree = "<group>"; };
+		895A24BD2F7AC30200CE7661 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		895A24BF2F7AC30200CE7661 /* CineTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineTrackTests.swift; sourceTree = "<group>"; };
+		895A24C42F7AC30500CE7661 /* CineTrackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineTrackUITests.swift; sourceTree = "<group>"; };
+		895A24C52F7AC30500CE7661 /* CineTrackUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineTrackUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		895A24CB2F7AC32800CE7661 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		895A24CF2F7AEA3B00CE7661 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		895A24D32F7AF3D300CE7661 /* SearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelTests.swift; sourceTree = "<group>"; };
+		895A24D52F7AF41A00CE7661 /* EndpointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
 		89ACD1172F6D7FD800E4349C /* CineTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ACD1242F6D7FD900E4349C /* CineTrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ACD12E2F6D7FD900E4349C /* CineTrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CineTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,19 +91,6 @@
 		89ACD16C2F6DCB5200E4349C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		89ACD1722F6DE48A00E4349C /* CastCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		89ACD1272F6D7FD900E4349C /* CineTrackTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CineTrackTests;
-			sourceTree = "<group>";
-		};
-		89ACD1312F6D7FD900E4349C /* CineTrackUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CineTrackUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		89ACD1142F6D7FD800E4349C /* Frameworks */ = {
@@ -128,12 +133,91 @@
 			path = Library;
 			sourceTree = "<group>";
 		};
+		895A24BB2F7AC30200CE7661 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				895A24D52F7AF41A00CE7661 /* EndpointTests.swift */,
+				895A24BA2F7AC30200CE7661 /* MockTMDBService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		895A24BC2F7AC30200CE7661 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				895A24BB2F7AC30200CE7661 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		895A24BE2F7AC30200CE7661 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				895A24BD2F7AC30200CE7661 /* MockData.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		895A24C02F7AC30200CE7661 /* CineTrackTests */ = {
+			isa = PBXGroup;
+			children = (
+				895A24BF2F7AC30200CE7661 /* CineTrackTests.swift */,
+				895A24BC2F7AC30200CE7661 /* Core */,
+				895A24C92F7AC30B00CE7661 /* Features */,
+				895A24BE2F7AC30200CE7661 /* Mocks */,
+			);
+			path = CineTrackTests;
+			sourceTree = "<group>";
+		};
+		895A24C62F7AC30500CE7661 /* CineTrackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				895A24C42F7AC30500CE7661 /* CineTrackUITests.swift */,
+				895A24C52F7AC30500CE7661 /* CineTrackUITestsLaunchTests.swift */,
+			);
+			path = CineTrackUITests;
+			sourceTree = "<group>";
+		};
+		895A24C92F7AC30B00CE7661 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				895A24D22F7AF3CB00CE7661 /* Search */,
+				895A24D12F7AEA4900CE7661 /* Detail */,
+				895A24CA2F7AC31800CE7661 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		895A24CA2F7AC31800CE7661 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				895A24CB2F7AC32800CE7661 /* HomeViewModelTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		895A24D12F7AEA4900CE7661 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				895A24CF2F7AEA3B00CE7661 /* DetailViewModelTests.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		895A24D22F7AF3CB00CE7661 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				895A24D32F7AF3D300CE7661 /* SearchViewModelTests.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		89ACD10E2F6D7FD800E4349C = {
 			isa = PBXGroup;
 			children = (
 				89ACD1442F6D82AD00E4349C /* CineTrack */,
-				89ACD1272F6D7FD900E4349C /* CineTrackTests */,
-				89ACD1312F6D7FD900E4349C /* CineTrackUITests */,
+				895A24C02F7AC30200CE7661 /* CineTrackTests */,
+				895A24C62F7AC30500CE7661 /* CineTrackUITests */,
 				89ACD1182F6D7FD800E4349C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -299,9 +383,6 @@
 			dependencies = (
 				89ACD1262F6D7FD900E4349C /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				89ACD1272F6D7FD900E4349C /* CineTrackTests */,
-			);
 			name = CineTrackTests;
 			packageProductDependencies = (
 			);
@@ -321,9 +402,6 @@
 			);
 			dependencies = (
 				89ACD1302F6D7FD900E4349C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				89ACD1312F6D7FD900E4349C /* CineTrackUITests */,
 			);
 			name = CineTrackUITests;
 			packageProductDependencies = (
@@ -433,6 +511,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895A24D62F7AF41E00CE7661 /* EndpointTests.swift in Sources */,
+				895A24C12F7AC30200CE7661 /* MockTMDBService.swift in Sources */,
+				895A24D02F7AEA4200CE7661 /* DetailViewModelTests.swift in Sources */,
+				895A24D42F7AF3D800CE7661 /* SearchViewModelTests.swift in Sources */,
+				895A24C22F7AC30200CE7661 /* MockData.swift in Sources */,
+				895A24CC2F7AC32B00CE7661 /* HomeViewModelTests.swift in Sources */,
+				895A24C32F7AC30200CE7661 /* CineTrackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +525,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895A24C72F7AC30500CE7661 /* CineTrackUITests.swift in Sources */,
+				895A24C82F7AC30500CE7661 /* CineTrackUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +691,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -635,7 +722,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -655,7 +742,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CineTrack";
 			};
@@ -676,7 +763,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CineTrack.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CineTrack";
 			};
@@ -695,7 +782,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CineTrack;
 			};
@@ -714,7 +801,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CineTrack;
 			};
