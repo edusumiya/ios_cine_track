@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - TV Show
 struct TVShow: Decodable, Identifiable, Hashable {
     let id: Int
     let name: String
@@ -31,6 +32,7 @@ struct TVShow: Decodable, Identifiable, Hashable {
     }
 }
 
+// MARK: - TV Show Detail
 struct TVShowDetail: Decodable, Identifiable {
     let id: Int
     let name: String

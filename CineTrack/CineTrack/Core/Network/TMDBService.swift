@@ -7,6 +7,18 @@
 
 import Foundation
 
+protocol TMDBServiceProtocol {
+    func fetchNowPlaying() async throws -> MediaResponse<Movie>
+    func fetchPopularMovies() async throws -> MediaResponse<Movie>
+    func fetchTopRated() async throws -> MediaResponse<Movie>
+    func fetchMovieDetail(id: Int) async throws -> MovieDetail
+    func fetchMovieCredits(id: Int) async throws -> Credits
+    func searchMovies(query: String) async throws -> MediaResponse<Movie>
+    func fetchPopularTVShows() async throws -> MediaResponse<TVShow>
+    func fetchTVShowDetail(id: Int) async throws -> TVShowDetail
+    func fetchTVShowCredits(id: Int) async throws -> Credits
+}
+
 final class TMDBService {
     
     // MARK: - Singleton
@@ -51,7 +63,7 @@ final class TMDBService {
 }
 
 // MARK: - Fetch Methods
-extension TMDBService {
+extension TMDBService: TMDBServiceProtocol {
     // MARK: - Movie
     func fetchNowPlaying() async throws -> MediaResponse<Movie> {
         try await request(.nowPlaying)

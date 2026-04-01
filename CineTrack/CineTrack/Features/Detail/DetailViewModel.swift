@@ -21,9 +21,9 @@ final class DetailViewModel {
     
     // MARK: - Dependencies
     private let mediaType: MediaType
-    private let service: TMDBService
+    private let service: any TMDBServiceProtocol
     
-    init(mediaType: MediaType, service: TMDBService = .shared) {
+    init(mediaType: MediaType, service: any TMDBServiceProtocol = TMDBService.shared) {
         self.mediaType = mediaType
         self.service = service
     }

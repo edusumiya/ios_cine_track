@@ -7,6 +7,7 @@
 
 import Foundation
 
+// MARK: - Movie
 struct Movie: Decodable, Identifiable, Hashable {
     let id: Int
     let title: String
