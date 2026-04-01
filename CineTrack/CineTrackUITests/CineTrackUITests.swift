@@ -7,22 +7,32 @@
 
 import XCTest
 
-@MainActor
 final class CineTrackUITests: XCTestCase {
-    
-    var app: XCUIApplication!
+
+    private var app: XCUIApplication!
     
     override func setUpWithError() throws {
         continueAfterFailure = false
-        app = XCUIApplication()
-        // Passa flag para o app saber que está em modo de teste
+    }
+
+    @MainActor
+    private func launchApp(resetPersistence: Bool = false) {
+        let app = XCUIApplication()
         app.launchArguments = ["UI_TESTING"]
+        
+        if resetPersistence {
+            app.launchArguments.append("RESET_PERSISTENCE")
+        }
+        
         app.launch()
+        self.app = app
     }
     
     // MARK: - Navegação Home → Detail
     @MainActor
     func testHomeToDetailNavigation() throws {
+        launchApp()
+
         // Aguarda a lista carregar
         let firstCard = app.images.element(boundBy: 4)
         XCTAssertTrue(firstCard.waitForExistence(timeout: 5))
@@ -36,6 +46,8 @@ final class CineTrackUITests: XCTestCase {
     // MARK: - Busca
     @MainActor
     func testSearch() throws {
+        launchApp()
+
         // Vai para a aba Search
         app.tabBars.buttons["Search"].tap()
         
@@ -53,8 +65,10 @@ final class CineTrackUITests: XCTestCase {
     // MARK: - Library
     @MainActor
     func testAddToFavorites() throws {
+        launchApp(resetPersistence: true)
+
         // Abre o detalhe do primeiro item
-        let firstCard = app.buttons.firstMatch
+        let firstCard = app.images.element(boundBy: 4)
         XCTAssertTrue(firstCard.waitForExistence(timeout: 5))
         firstCard.tap()
         
@@ -74,7 +88,18 @@ final class CineTrackUITests: XCTestCase {
     
     @MainActor
     func testSwipeToDeleteFromLibrary() throws {
-        // Pressupõe que já tem um item salvo (rode após testAddToFavorites)
+        launchApp(resetPersistence: true)
+
+        // Salva um item nesta execução antes de validar a exclusão.
+        let firstCard = app.images.element(boundBy: 4)
+        XCTAssertTrue(firstCard.waitForExistence(timeout: 5))
+        firstCard.tap()
+
+        let favoriteButton = app.buttons["heart"].firstMatch
+        XCTAssertTrue(favoriteButton.waitForExistence(timeout: 5))
+        favoriteButton.tap()
+
+        app.navigationBars.buttons.firstMatch.tap()
         app.tabBars.buttons["Library"].tap()
         
         let firstCell = app.cells.firstMatch

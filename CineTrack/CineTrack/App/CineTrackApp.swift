@@ -10,6 +10,24 @@ import SwiftData
 
 @main
 struct CineTrackApp: App {
+    private let sharedModelContainer: ModelContainer
+
+    init() {
+        do {
+            let isUITesting = ProcessInfo.processInfo.arguments.contains("UI_TESTING")
+            let configuration = ModelConfiguration(
+                isStoredInMemoryOnly: isUITesting
+            )
+
+            sharedModelContainer = try ModelContainer(
+                for: SavedMedia.self,
+                configurations: configuration
+            )
+        } catch {
+            fatalError("Failed to create model container: \(error)")
+        }
+    }
+
     var body: some Scene {
         WindowGroup {
             TabView {
@@ -26,10 +44,9 @@ struct CineTrackApp: App {
                 LibraryView()
                     .tabItem {
                         Label("Library", systemImage: "books.vertical.fill")
-                    }
+                }
             }
         }
-        // it uses injection of SwiftData in all child views environment
-        .modelContainer(for: SavedMedia.self)
+        .modelContainer(sharedModelContainer)
     }
 }
