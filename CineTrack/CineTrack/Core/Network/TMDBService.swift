@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 protocol TMDBServiceProtocol {
     func fetchNowPlaying() async throws -> MediaResponse<Movie>
     func fetchPopularMovies() async throws -> MediaResponse<Movie>

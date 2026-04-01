@@ -8,7 +8,6 @@
 import Foundation
 @testable import CineTrack
 
-@MainActor
 final class MockTMDBService: TMDBServiceProtocol {
     //Mock controls
     var nowPlayingResult: Result<MediaResponse<Movie>, Error> = .success(

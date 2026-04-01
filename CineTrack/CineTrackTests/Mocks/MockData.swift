@@ -76,7 +76,6 @@ extension MovieDetail {
             runtime: 120,
             genres: [Genre(id: 28, name: "Action")],
             tagline: "A mock tagline"
-//            status: "Released"
         )
     }
 }
